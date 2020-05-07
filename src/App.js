@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Wireframe from './Components/Wireframe';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="title">
+        <h1>Hello Dojo</h1>
+      </div>
+      <div className="listheader">
+        <h3>Things I need to do:</h3>
+      </div>
+      <div className="listitems">
+        <ul>
+          <li>Learn React</li>
+          <li>Climb Mt. Everest</li>
+          <li>Run marathon</li>
+          <li>Feed the dogs</li>
+        </ul>
+      </div>
     </div>
+    
   );
 }
 
